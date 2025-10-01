@@ -48,7 +48,7 @@ export default function Index({ tasks }) {
                             type="checkbox"
                             checked={task.is_done}
                             onChange={() => toggleDone(task)}
-                            className="mr-2 h-4 w-4"
+                            className="mr-2 h-4 w-4 cursor-pointer"
                         />
                         <span className={task.is_done ? "line-through" : ""}>
                             {task.title}
